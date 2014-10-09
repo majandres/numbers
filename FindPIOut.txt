@@ -1,0 +1,31 @@
+I will generate PI up to 16 decimal places
+
+To quit, enter 0
+
+How many places would you like? 17
+
+I can only do up to 16 decimal places
+Try again!
+
+How many places would you like? 16
+PI is:
+3.1415926535897931
+
+How many places would you like? 4
+PI is:
+3.1416
+
+How many places would you like? 2
+PI is:
+3.14
+
+How many places would you like? 100
+
+I can only do up to 16 decimal places
+Try again!
+
+How many places would you like? 0
+
+Have a good day!
+
+Press any key to continue . . .
