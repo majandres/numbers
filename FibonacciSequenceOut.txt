@@ -1,6 +1,25 @@
-I will generate the positive Fibonacci index sequence upto the number entered
+*************************************************************
+I will generate the Fibonacci index sequence between F0 - F46
+
+Up to which index would you like to see?
 
 To quit, enter -99
+*************************************************************
+
+
+Enter Fibonacci index: -1
+
+I can only generate the Fibonacci index sequence between F0 - F46
+
+Enter Fibonacci index: +47
+
+I can only generate the Fibonacci index sequence between F0 - F46
+
+Enter Fibonacci index: Hello, World!
+That's not a number
+
+Enter Fibonacci index: Okay, let's start the sequnce, shall we?
+That's not a number
 
 Enter Fibonacci index: 0
 
@@ -10,17 +29,33 @@ Enter Fibonacci index: 1
 
 0, 1
 
-Enter Fibonacci index: 10
+Enter Fibonacci index: 2
 
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+0, 1, 1
 
-Enter Fibonacci index: -13
+Enter Fibonacci index: 4
 
--13 is not a positive number!
+0, 1, 1, 2, 3
 
-Enter Fibonacci index: 7
+Enter Fibonacci index: 20
 
-0, 1, 1, 2, 3, 5, 8, 13
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 41
+81, 6765
+
+Enter Fibonacci index: 40
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 41
+81, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832
+040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169,
+63245986, 102334155
+
+Enter Fibonacci index: 46
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 41
+81, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832
+040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169,
+63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 183
+6311903
 
 Enter Fibonacci index: -99
 

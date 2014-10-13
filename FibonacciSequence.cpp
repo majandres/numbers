@@ -4,6 +4,7 @@
 //Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -11,8 +12,11 @@ void fibSequence();
 
 int main()
 {
-	cout << "I will generate the positive Fibonacci index sequence upto the number entered" << endl << endl;
-	cout << "To quit, enter -99" << endl << endl;
+	cout << setw(61) << setfill('*') << "" << endl;
+	cout << "I will generate the Fibonacci index sequence between F0 - F46" << endl << endl;
+	cout << "Up to which index would you like to see?  " << endl << endl;
+	cout << "To quit, enter -99" << endl;
+	cout << setw(61) << setfill('*') << "" << "\n\n\n";
 
 	fibSequence();
 
@@ -21,21 +25,35 @@ int main()
 	return 0;
 }
 
-/****needs a guard against decimal numbers, characters, and strings****/
+/****needs a guard against decimal numbers, and characters following an int value (ex. 5.4 and 5hello)****/
 void fibSequence()
 {
-	int num = 0;
+	int num = 0; //initialized for while loop
 	while (num != -99)
 	{
-		cout << "Enter Fibonacci index: ";
-		cin >> num;
-
-		if (num < 0 && num != -99) //prints if number entered is less than 0.
+		int fail = 0;
+		do
 		{
-			cout << endl << num << " is not a positive number!" << endl << endl; continue; //continue skips the rest of the loop and returns to the top of while loop
+			cout << "Enter Fibonacci index: ";
+			cin >> num;
+			if (fail = cin.fail()) //cin.fail returns 1 if input entered does not match the value defined in the variable
+			{
+				cout << "That's not a number" << endl << endl;
+				cin.clear(); //repairs the input stream
+				cin.ignore(numeric_limits<int>::max(), '\n'); //clears the buffer
+			}
+
+		} while (fail == 1);
+
+
+		if ((num < 0 || num > 46) && num != -99) //prints if number entered is 0 - 46 and not -99.
+		{
+			cout << endl << "I can only generate the Fibonacci index sequence between F0 - F46" << endl << endl; continue; //continue skips the rest of the loop and returns to the top of while loop
 		}
 
 		cout << endl;
+
+		/**********************************Start of Fibonacci Sequence*************************************************************************/
 
 		int num1 = 0, num2 = 1, fib;
 
