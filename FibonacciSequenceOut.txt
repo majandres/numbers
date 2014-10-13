@@ -15,11 +15,14 @@ Enter Fibonacci index: +47
 
 I can only generate the Fibonacci index sequence between F0 - F46
 
-Enter Fibonacci index: Hello, World!
-That's not a number
+Enter Fibonacci index: 10.12
+That's not an integer
 
-Enter Fibonacci index: Okay, let's start the sequnce, shall we?
-That's not a number
+Enter Fibonacci index: 27 Hello, World!
+That's not an integer
+
+Enter Fibonacci index: Let's start the sequence, shall we?
+That's not an integer
 
 Enter Fibonacci index: 0
 
