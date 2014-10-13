@@ -1,5 +1,5 @@
-//Andres Garcia de Alba (R01627379)
-//Sept 11, 2014
+//Andres Garcia de Alba
+//Oct 13, 2014
 //Fibonacci Sequence - 
 //Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number
 
