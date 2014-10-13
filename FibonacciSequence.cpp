@@ -25,7 +25,6 @@ int main()
 	return 0;
 }
 
-/****needs a guard against decimal numbers, and characters following an int value (ex. 5.4 and 5hello)****/
 void fibSequence()
 {
 	int num = 0; //initialized for while loop
@@ -36,14 +35,16 @@ void fibSequence()
 		{
 			cout << "Enter Fibonacci index: ";
 			cin >> num;
-			if (fail = cin.fail()) //cin.fail returns 1 if input entered does not match the value defined in the variable
+			
+			if (fail = cin.fail() || cin.peek() != '\n') //cin.fail returns 1 if input entered does not match the value defined in the variable
+														 //or if there are any other characters after an integer that are not the newline character
 			{
-				cout << "That's not a number" << endl << endl;
+				cout << "That's not an integer" << endl << endl;
 				cin.clear(); //repairs the input stream
 				cin.ignore(numeric_limits<int>::max(), '\n'); //clears the buffer
 			}
 
-		} while (fail == 1);
+		} while (fail == 1); //keeps looping if cin value does not match int data type
 
 
 		if ((num < 0 || num > 46) && num != -99) //prints if number entered is 0 - 46 and not -99.
